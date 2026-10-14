@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>નફીસા &amp; અરમાન – નિમંત્રણ</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#7a1b2e;--deep:#4a0e1a;--saffron:#f29f05;--rani:#c2185b;--cream:#fff4dc;--ink:#3b1d1d;--bg:#fff4dc;--card:#fffdf6;--head:#7a1b2e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#fbe9c6;--bg:#2b0f16;--card:#3d1722;--head:#f7c04a}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Serif Gujarati',serif;font-size:18px;line-height:1.9;text-align:center}
+.ar{font-family:'Amiri',serif;direction:rtl;line-height:2.1}
+.disp{font-family:'Noto Serif Gujarati',serif;font-weight:700}
+.toran{height:34px;background:
+conic-gradient(from 200deg at 50% 0,transparent 0 0) ,
+linear-gradient(135deg,var(--saffron) 25%,transparent 25%) -17px 0/34px 34px,
+linear-gradient(225deg,var(--rani) 25%,transparent 25%) -17px 0/34px 34px;filter:none}
+.toran::before{content:"";display:block;height:6px;background:var(--saffron)}
+.bandhani{background:radial-gradient(circle at 50% 0,#8f2438 0,transparent 65%),linear-gradient(#5a1020,#3d0b16)}
+/* splash */
+#splash{position:fixed;inset:0;z-index:50;overflow:hidden;perspective:1400px;background:radial-gradient(circle at 50% 40%,#ffe7a8,#f29f05 70%,#b86a00)}
+.court{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;color:var(--deep)}
+.court h1{font-size:44px;margin:.1em 0;line-height:1.3}
+.door{position:absolute;top:0;bottom:0;width:50.2%;border:8px solid #f29f05;transition:transform 2.2s cubic-bezier(.6,.05,.2,1);display:flex;align-items:center;justify-content:center}
+.door::after{content:"❁";font-size:76px;color:#ffd98a;text-shadow:0 0 12px rgba(0,0,0,.4)}
+#dl{left:0;transform-origin:left;border-right-width:3px}#dr{right:0;transform-origin:right;border-left-width:3px}
+#splash.open #dl{transform:rotateY(-105deg)}#splash.open #dr{transform:rotateY(105deg)}
+#tap{position:absolute;z-index:3;left:50%;bottom:11%;transform:translateX(-50%);background:var(--rani);color:#fff;border:2px solid #ffd98a;border-radius:40px;padding:12px 28px;font:600 19px 'Noto Serif Gujarati',serif;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.4);white-space:nowrap}
+#tap:focus-visible{outline:3px solid #fff;outline-offset:3px}
+#splash.open #tap{opacity:0;pointer-events:none;transition:opacity .4s}
+#splash.gone{opacity:0;pointer-events:none;transition:opacity 1s .9s}
+section{padding:52px 22px;max-width:560px;margin:auto}
+.hero{max-width:none;padding:56px 22px 72px;color:var(--cream);position:relative}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:18px;background:radial-gradient(circle at 12px 0,var(--bg) 11px,transparent 12px) 0 0/24px 18px}
+.bism{font-size:30px;color:#ffd98a}
+.names{font-size:50px;line-height:1.35;margin:.2em 0;text-shadow:none}
+.amp{display:block;font-size:30px;color:#ffd98a}
+.small{font-size:16px;opacity:.9}
+.card{background:var(--card);border:2px solid var(--saffron);border-radius:16px;padding:22px 18px;margin:16px 0;box-shadow:0 0 0 5px var(--card),0 0 0 7px var(--rani)}
+.verse{font-size:29px}.ref{font-size:15px;color:var(--rani);margin-top:4px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ref{color:#ff8fb8}}
+h2{font-size:30px;margin:0 0 .3em;color:var(--head);line-height:1.5}
+.poem{font-size:21px;line-height:2.1}
+.rangoli{font-size:28px;color:var(--rani);letter-spacing:.4em}
+#cd{display:flex;gap:10px;justify-content:center;margin-top:12px}
+#cd div{background:var(--teal);color:var(--cream);border:2px solid var(--saffron);border-radius:12px;padding:10px 0;width:78px}
+#cd b{display:block;font-size:32px;line-height:1.2;font-family:sans-serif}#cd span{font-size:14px}
+.date{font-size:44px;color:var(--rani);line-height:1.4}
+.btn{display:inline-block;margin-top:14px;background:var(--rani);color:#fff;padding:10px 26px;border-radius:30px;text-decoration:none;border:2px solid var(--saffron);font-weight:600}
+.end{max-width:none;color:var(--cream);padding-bottom:70px}.end .ar{font-size:29px;color:#ffd98a}
+#music{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:40;width:48px;height:48px;border-radius:50%;border:2px solid var(--saffron);background:var(--rani);color:#fff;font-size:20px;cursor:pointer;display:none}
+.spark{position:fixed;top:-20px;pointer-events:none;z-index:30;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(108vh) rotate(200deg);opacity:.2}}
+@media (prefers-reduced-motion:reduce){.door{transition-duration:.01s}.spark{display:none}}
+</style>
+</head>
+<body>
+<div id="splash">
+  <div class="court"><div class="rangoli">❁ ✦ ❁</div><h1 class="disp">નફીસા &amp; અરમાન</h1><div>આપને હાર્દિક નિમંત્રણ</div></div>
+  <div class="door bandhani" id="dl"></div><div class="door bandhani" id="dr"></div>
+  <button id="tap">નિમંત્રણ ખોલો</button>
+</div>
+<button id="music" aria-label="સંગીત">♪</button>
+<audio id="song" loop preload="auto"></audio>
+
+<div class="toran"></div>
+<section class="hero bandhani">
+  <div class="bism ar">بسم الله الرحمن الرحيم</div>
+  <div class="small">અસ્સલામુ અલયકુમ · અમારા પરિવારના આશીર્વાદ સાથે</div>
+  <div class="names disp">નફીસા<span class="amp">&amp;</span>અરમાન</div>
+  <div>ના નિકાહ પ્રસંગે આપને સપરિવાર પધારવા હાર્દિક નિમંત્રણ</div>
+</section>
+
+<section>
+  <div class="card">
+    <div class="verse ar">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</div>
+    <p>અને તેની નિશાનીઓમાંથી એક એ છે કે તેણે તમારા માટે તમારામાંથી જ જીવનસાથી બનાવ્યા, જેથી તમે તેમનાથી સુકૂન પામો, અને તેણે તમારી વચ્ચે પ્રેમ અને દયા મૂકી.</p>
+    <div class="ref">સૂરહ અર-રૂમ · ૩૦:૨૧</div>
+  </div>
+</section>
+
+<section>
+  <div class="rangoli">❁ ✦ ❁</div>
+  <h2 class="disp">બે દિલ, એક જહાન</h2>
+  <p class="poem">નફીસાની નજાકત, અરમાનના અરમાન,<br>બે દિલ મળ્યાં ને બન્યું એક જ જહાન.<br>દુઆઓના દીવા, ખુશીઓની રંગોળી,<br>આવજો, વધાવવા આ ઘડી સોનેરી.</p>
+</section>
+
+<section>
+  <h2 class="disp">હંમેશ માટે સાથ સુધી</h2>
+  <div id="cd"><div><b id="d">0</b><span>દિવસ</span></div><div><b id="h">0</b><span>કલાક</span></div><div><b id="m">0</b><span>મિનિટ</span></div><div><b id="s">0</b><span>સેકન્ડ</span></div></div>
+</section>
+
+<section>
+  <h2 class="disp">તારીખ નોંધી લો</h2>
+  <div class="card">
+    <div class="date disp">૧૨ મે ૨૦૨૭</div>
+    <div>બુધવાર</div>
+    <p>સમય અને સ્થળની વિગતો ટૂંક સમયમાં જણાવવામાં આવશે.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="disp">આપની હાજરી જ અમારી ભેટ</h2>
+  <p>આપની દુઆઓ અને આશીર્વાદ જ અમારી સૌથી મોટી ખુશી છે.</p>
+</section>
+
+<div class="toran"></div>
+<section class="end bandhani">
+  <div class="ar">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+  <p>અલ્લાહ તમને બરકત આપે, તમારા પર બરકત ઉતારે અને તમને બંનેને ભલાઈમાં એક કરે.</p>
+  <div class="small">સપ્રેમ, નફીસા અને અરમાનના પરિવારજનો</div>
+</section>
+
+<script>
+var EVENT=new Date('2027-05-12T18:00:00');
+var SONG_SRC='';
+var splash=document.getElementById('splash'),song=document.getElementById('song'),mb=document.getElementById('music');
+if(SONG_SRC)song.src=SONG_SRC;
+function sparkle(){for(var i=0;i<28;i++){var e=document.createElement('span');e.className='spark';e.textContent=['✿','❁','✦','·'][i%4];e.style.color=['#f29f05','#c2185b','#ffd98a'][i%3];e.style.left=Math.random()*100+'vw';e.style.fontSize=(12+Math.random()*16)+'px';e.style.animationDuration=(4+Math.random()*5)+'s';e.style.animationDelay=Math.random()*2+'s';document.body.appendChild(e);setTimeout(function(x){x.remove()},11500,e)}}
+document.getElementById('tap').onclick=function(){
+ splash.classList.add('open');
+ if(SONG_SRC){song.play().catch(function(){});mb.style.display='block'}
+ setTimeout(function(){splash.classList.add('gone');sparkle()},700);
+ setTimeout(function(){splash.style.display='none'},2800)};
+mb.onclick=function(){song.paused?song.play():song.pause()};
+function tick(){var t=Math.max(0,EVENT-new Date()),q=Math.floor;d.textContent=q(t/864e5);h.textContent=q(t/36e5%24);m.textContent=q(t/6e4%60);s.textContent=q(t/1e3%60)}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
